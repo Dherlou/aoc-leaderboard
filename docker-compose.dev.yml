@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  aoc-leaderboard:
+    ports:
+      - "80:80"
+    volumes:
+      - ./files:/var/www/html

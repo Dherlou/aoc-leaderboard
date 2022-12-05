@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  aoc-leaderboard:
+    container_name: aoc-leaderboard
+    build: .
+    restart: always
+    environment:
+      - AOC_YEAR
+      - AOC_LEADERBOARD_ID
+      - AOC_LEADERBOARD_TITLE
+      - AOC_SESSION_COOKIE
+      - AOC_NO_GLOBAL_SCORE

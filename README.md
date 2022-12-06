@@ -22,9 +22,6 @@
 
 To get a local copy up and running follow these simple steps.
 
-### Current build status:
-Example Deployment:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Build Status](https://luckev.info/jenkins/buildStatus/icon?job=Projects%2FAoC-Leaderboard-RZUW%2FBuild%2BDeploy)](https://luckev.info/jenkins/job/Projects/job/AoC-Leaderboard-RZUW/job/Build+Deploy/)
-
 ### Prerequisites
 
 ["All you need is LOVE!"](https://youtu.be/_7xMfIp-irg) - and [Docker](https://www.docker.com/) as well as [Git](https://git-scm.com/)!

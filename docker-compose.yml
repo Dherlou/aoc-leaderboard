@@ -5,8 +5,11 @@ services:
     build: .
     restart: always
     environment:
-      - AOC_YEAR
+      - AOC_SESSION_COOKIE
       - AOC_LEADERBOARD_ID
       - AOC_LEADERBOARD_TITLE
-      - AOC_SESSION_COOKIE
+      - AOC_LEADERBOARD_FAVICON
+      - AOC_LEADERBOARD_LOGO
+      - AOC_YEAR
       - AOC_NO_GLOBAL_SCORE
+      - DEV_MODE

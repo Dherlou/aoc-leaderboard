@@ -76,10 +76,10 @@ img.circle-img.circle-img--small {
 }
 
 /* font awesome temporary fix */
-.fa-layers {
+.fa-layers.fix {
 	position: relative;
 }
-.fa-layers-text {
+.fa-layers-text.fix {
 	position: absolute;
 	top: 50%;
 	left: 50%;

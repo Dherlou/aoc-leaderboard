@@ -31,9 +31,9 @@
 
         public static function score(int $score): void {
             ?>
-                <span class='fa-layers fa-fw fa-2x' style='color: <?php echo(Rank::GOLD->get_color()); ?>;'>
+                <span class='fa-layers fix fa-fw fa-2x' style='color: <?php echo(Rank::GOLD->get_color()); ?>;'>
                     <i class='fa-solid fa-coins'></i>
-                    <span class='fa-layers-text text-dark' data-fa-transform='shrink-8 down-3' style='font-weight:900'><?php echo($score); ?></span>
+                    <span class='fa-layers-text fix text-dark' data-fa-transform='shrink-8 down-3' style='font-weight:900'><?php echo($score); ?></span>
                 </span>
             <?php
         }
@@ -49,9 +49,9 @@
                 $day_local_star_ts_idx = array_search($member_days[$day][2]['get_star_ts'], $day_local_star_tss[$day]);
                 
                 ?>
-                    <span class='fa-layers fa-fw fa-xl' style='color: <?php echo($completed->get_color()); ?>;'>
+                    <span class='fa-layers fix fa-fw fa-xl' style='color: <?php echo($completed->get_color()); ?>;'>
                         <i class='fa-solid fa-star'></i>
-                        <span class='fa-layers-text text-dark' data-fa-transform='shrink-8 down-3' style='font-weight:600'>
+                        <span class='fa-layers-text fix text-dark' data-fa-transform='shrink-8 down-3' style='font-weight:600'>
                             <?php echo(1+$day_local_star_ts_idx); ?>
                         </span>
                     </span>
@@ -65,9 +65,9 @@
 
         public static function stars(int $stars): void {
             ?>
-                <span class='fa-layers fa-fw fa-2x' style='color: <?php echo(Rank::GOLD->get_color()); ?>;'>
+                <span class='fa-layers fix fa-fw fa-2x' style='color: <?php echo(Rank::GOLD->get_color()); ?>;'>
                     <i class='fa-solid fa-star'></i>
-                    <span class='fa-layers-text text-dark' data-fa-transform='shrink-8 down-3' style='font-weight:900'><?php echo($stars); ?></span>
+                    <span class='fa-layers-text fix text-dark' data-fa-transform='shrink-8 down-3' style='font-weight:900'><?php echo($stars); ?></span>
                 </span>
             <?php
         }

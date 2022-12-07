@@ -41,7 +41,7 @@
 						<th>
 							<div class='d-flex flex-column align-items-center justify-content-center'>
 								<span>Lokaler Punktestand</span>
-								<small>(1. Platz = 1*#Benutzer, ..., Letzter Platz = 1)</small>
+								<small>(1. Platz = #Gruppenmitglieder, ..., Letzter Platz = 1)</small>
 							</div>
 						</th>
 						<?php if (getenv('AOC_NO_GLOBAL_SCORE') === null) { ?>
@@ -112,7 +112,10 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach ($aoc_data['members'] as $rank => $member) { ?>
+					<?php 
+					$days_local_star_tss = DataLoader::get_days_local_star_tss($aoc_data);
+
+					foreach ($aoc_data['members'] as $rank => $member) { ?>
 					<tr>
 						<td>
 							<div class='d-flex align-items-center'>
@@ -127,7 +130,7 @@
 						<?php for ($i = 1; $i <= 24; $i++) { ?>
 						<td>
 							<div class='d-flex align-items-center justify-content-center'>
-								<?php Renderer::star($member['completion_day_level'][$i] ?? []); ?>
+								<?php Renderer::star($i, $member['completion_day_level'] ?? [], $days_local_star_tss); ?>
 							</div>
 						</td>
 						<?php } ?>

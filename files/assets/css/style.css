@@ -74,3 +74,15 @@ img.circle-img.circle-img--small {
 .table tbody tr td:nth-last-child(1) {
 	border-radius: 0 5px 5px 0;
 }
+
+/* font awesome temporary fix */
+.fa-layers {
+	position: relative;
+}
+.fa-layers-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	font-size: small;
+}

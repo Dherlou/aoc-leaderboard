@@ -58,7 +58,7 @@ Once docker is installed, you must follow these steps:
 ## To-Dos
 
 * i18n
-* display daily local completion rank
+* wait for bootstrap to fix layered icons
 
 
 ## License
